@@ -174,16 +174,12 @@ button {
   flex-direction: row;
   overflow-x: scroll;
   padding-bottom: 10px;
-  width: 719px;
-  height: 175px;
 }
 #popular {
   display: flex;
   flex-direction: row;
   overflow-x: scroll;
   padding-bottom: 10px;
-  width: 719px;
-  height: 175px;
 }
 .tab > img {
   width: 100px;
