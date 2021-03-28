@@ -1,0 +1,386 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap');
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Baloo Tamma', cursive;
+}
+/* navbars top and bottom */
+nav {
+  width: 100%;
+  background-color: #3e0afa;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  box-shadow: 0 0 5px grey;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-between;
+}
+#nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+nav i {
+  font-size: 40px;
+  color: white;
+}
+h2 {
+  text-align: center;
+  color: white;
+}
+nav h2 {
+  font-family: "Lobster", cursive;
+  margin-right: 40%;
+}
+#back {
+  color: white;
+  text-decoration: none;
+}
+
+#bottom {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  bottom: 0px !important;
+}
+#bottom > ul {
+  background-color: #3f0bfa;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  height: 60px;
+}
+
+#bottom > ul li {
+  color: #fff;
+  cursor: pointer;
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+}
+
+#bottom > ul li:hover,
+nav ul li.active {
+  color: #fa9e0b;
+}
+
+#bottom > ul li p {
+  font-size: 1em;
+  margin:0 2px 0 0;
+}
+#bottom > ul li a i,
+#bottom > ul li a p {
+  color: white;
+}
+/* End of navbars */
+/* main pages of home, about and feedback */
+#home{
+  margin-top: 4.2em;
+  margin-bottom: 70px;
+}
+.pages{
+  margin-bottom: 2em;
+}
+#feed, #aboutus{
+  margin-top: 3.2em;
+}
+#about > h2,
+#about > h3,
+h4,
+#feedback > h2 {
+  text-align: left;
+  color: #3f0bfa;
+}
+#about > h4 {
+  text-align: center;
+}
+#about,
+#feedback {
+  font-size: 1.1em;
+  font-weight: 2em;
+  margin: 0 0.5em;
+}
+.trade {
+  font-family: "Lobster", cursive;
+  font-size: 18px;
+  color: black;
+}
+#space {
+  height: 70px;
+}
+/* End of main pages */
+/* Search box */
+.search {
+  background-color: rgba(31, 31, 165, 0.7);
+  padding: 1em;
+  margin: 0.5em;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+input {
+  padding: 10px;
+  width: 50%;
+  border-radius: 10px;
+  margin: 10px;
+  border: none;
+}
+button {
+  color: white;
+  background-color: #3f0bfa;
+  width: 6em;
+  text-align: center;
+  padding: 1em;
+  margin: 1em;
+  border-radius: 10px;
+  border: none;
+}
+/* End of Search box */
+/* result div */
+#info {
+  text-align: center;
+  margin:10px;
+}
+.info{
+  text-align:center;
+}
+#warning {
+  color: red;
+  font-weight: 2em;
+  font-size: 1.3em;
+}
+#results {
+  margin: 1em;
+}
+.lists {
+  color: black;
+  border-radius: 10px;
+}
+#str{
+  white-space: pre-wrap;
+}
+.categories {
+  overflow: hidden;
+}
+#cattabs {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  padding-bottom: 10px;
+  width: 719px;
+  height: 175px;
+}
+#popular {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  padding-bottom: 10px;
+  width: 719px;
+  height: 175px;
+}
+.tab > img {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgb(0,0,0 0.4);
+}
+
+#results > span,
+span {
+  color: #3f0bfa;
+  font-weight: 4em;
+  font-size: 1.2em;
+}
+#random {
+  width: 10em;
+}
+.random {
+  text-align: center;
+}
+#motd {
+  padding: 1em;
+  margin: 1em;
+  background-color: rgba(31, 31, 165, 0.7);
+  border-radius: 10px;
+  height: auto;
+}
+#daymeal > .gallery > .desc {
+  color: white;
+}
+#daymeal > img {
+  width: 100%;
+}
+#searchedmeal {
+  flex-wrap: wrap;
+}
+/* Searched meal div */
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 49.99999%;
+}
+div.gallery {
+  border: 1px solid #ccc;
+  flex-wrap: wrap;
+  margin: 5px;
+  border-radius: 0 0 10px 10px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery > img {
+  width: 100%;
+  height: auto;
+  border-radius: 0 0 10px 10px;
+}
+div.desc {
+  padding: 10px;
+  text-align: center;
+  color: #3f0bfa;
+  height: 4em;
+  overflow-y: hidden;
+}
+/* Recipe render */
+.item1 > h2 {
+  color: #3f0bfa;
+}
+.ingredients,
+.directions {
+  padding: 0 10px;
+  font-size: 1.3em;
+}
+.item5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imageDiv > img {
+  width: 100%;
+  height: auto;
+  margin:auto;
+}
+
+iframe {
+  width: 95vw;
+  height: 30vh;
+}
+/* feedback div */
+form {
+  margin-top: 1em;
+  margin-bottom: 75px;
+  background-color: rgba(31, 31, 163, 0.7);
+  color: rgb(250, 250, 250);
+  border: 2px solid white;
+  box-shadow: 4px 4px 10px grey;
+  font-size: 1.2em;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+}
+.inputed {
+  width: 100%;
+  margin: 10px 0px;
+  padding: 5px;
+  border: 2px solid white;
+  border-style: none none solid double;
+  background-color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+textarea {
+  margin-top: 10px;
+  width: 100%;
+  height: 100px;
+  border-radius: 0 20px 20px 20px;
+  outline: none;
+  resize: none;
+  background-color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+select {
+  margin: 10px 0;
+  padding: 5px;
+  min-width: 6em;
+  min-height: 1.5em;
+}
+/* about Section */
+.social-ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-ul a {
+  border-radius: 50%;
+  border: 1px solid #fff;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  margin: 5px 5px;
+  height: 50px;
+  width: 50px;
+  text-decoration: none;
+  background-color: #3f0bfa;
+}
+@media screen and (min-width: 1000px){
+  body{
+    width: 1000px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+  }
+  nav{
+    max-width: 1000px;
+  }
+  #bottom{
+    width: 1000px;
+    left:50%;
+    transform:translate(-50%);
+  }
+  #motd{
+    max-width: 700px;
+    margin:auto;
+    height: auto;
+
+  }
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+   div.gallery > img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0 0 10px 10px;
+  } 
+  .imageDiv > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%
+    
+  }
+  .center{
+    text-align:center;
+  }
+  
+}

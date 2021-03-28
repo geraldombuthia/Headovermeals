@@ -1,0 +1,16 @@
+{
+  "background_color": "blue",
+  "theme_color": "#3e0afa",
+  "description": "Find a delicious recipe.",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "icon/Food.webp",
+      "sizes": "512x512",
+      "type": "image/webp"
+    }
+  ],
+  "name": "HeadOverMeals",
+  "short_name": "HOM",
+  "start_url": "/index.html"
+}

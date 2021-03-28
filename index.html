@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175327479-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-175327479-1');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Recipes to prepare delicious breakfast, lunch or dinner meals and snacks">
+  <title>HeadOverMeals</title>
+  <link rel="preconnect" href="https://www.freepngimg.com">
+  <link rel="preconnect" href="https://www.themealdb.com">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" defer>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.webmanifest">
+</head>
+
+<body>
+  <nav class="navbar">
+    <h2>HeadOverMeals</h2>
+    <div id="navlinks">
+      <a href="#home" id="back">Back</a>
+    </div>
+  </nav>
+  <div id="home" class="pages">
+    <div class="search" id="search">
+      <label for="input" style="color:white;">Search</label>
+      <input type="text" id="input" name="input" placeholder="Search anything" />
+      <button id="searchbtn">Search</button>
+    </div>
+    <div id="info"></div>
+    <div id="results">
+
+      <div class="lists">
+        <div class="categories">
+          <h3>Categories</h3>
+          <div id="cattabs"></div>
+        </div>
+        <div class="popular">
+          <h3>Popular Ingredients</h3>
+          <div id="popular">
+
+          </div>
+        </div>
+      </div>
+      <div class="random">
+        <p><button id="random" onclick="fetchRandom()">Get Random Meal</button></p>
+      </div>
+      <div id="motd">
+        <h2>Editors Pick</h2>
+        <div id="daymeal">
+
+        </div>
+      </div>
+    </div>
+    <div id="searchedmeal">
+
+    </div>
+    <div id="hack" style="visibility: hidden" aria-hidden="true">Hey there</div>
+  </div>
+
+  <div id="feedback">
+    <h2 id="feed">Feedback</h2>
+    <p> Your feedback is highly appreciated and will help improve the service rendered by this application.
+      Have you seen or found any issues relating to the app?
+      Inform us through the form below.</p>
+    <div class="form">
+      <form name="questionaire" method="POST" data-netlify="true">
+        <div class="input">
+          <label for="name">Name:</label>
+          <input type="text" name="name" class="inputed"></input>
+        </div>
+        <div class="input">
+          <label for="cooking">Do you like cooking?</label>
+          <select name="cooking">
+            <option value="blank"> </option>
+            <option value="Yes, alot">Yes, alot</option>
+            <option value="A little">A little</option>
+            <option value="No, not at all">No, not at all</option>
+
+          </select>
+        </div>
+        <div class="input">
+          <label for="gender">What is your gender?</label>
+          <select name="gender">
+            <option value="blank"> </option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="rather not say">Rather not say</option>
+          </select>
+        </div>
+        <div class="input">
+          <label for="satisfied">How satisfied are you with this recipe app?</label>
+          <select name="satisfied">
+            <option value="blank"> </option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+        <div class="input">
+          <label for="aspects-liked"> What particular aspect(s) of our website do you like?</label>
+          <textarea type="text" name="aspects-liked"></textarea>
+        </div>
+        <div class="input">
+          <label for="aspects-disliked"> What particular aspect(s) of our website do you dislike?</label>
+          <textarea type="text" name="aspects-disliked"></textarea>
+        </div>
+        <div class="input">
+          <label for="satisfied"> How likely would you be to recommend HeadOverMeals to your friends or
+            colleagues?</label>
+          <select name="recommend">
+            <option value="blank"> </option>
+            <option value="Very likely">Very likely</option>
+            <option value="Neutral">Neutral</option>
+            <option value="Very unlikely">Very unlikely</option>
+          </select>
+        </div>
+        <div class="input">
+          <label for="suggestions">We would love to hear any suggestions you might have to improve this app:</label>
+          <textarea type="text" name="suggestions"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  <div id="about">
+    <h2 id="aboutus">About Us</h2>
+    <span class="trade">HeadOverMeals</span> is a web application that provides a variety of recipes to its users.
+    Its main purpose is to diversify meal menus for all its users allowing those passionate about cooking to improve on
+    their skills while also considering
+    those whose cooking skills or passion might be lacking. Its designed to ensure optimum levels of convenience and
+    client satisfaction.
+    The initial design and development of the project was started on the 5th August 2020
+    <h3>About the developer</h3>
+    <span class="trade">HeadOverMeals</span> is designed and built by Gerald Mbuthia. He describes himself as an ardent
+    learner of tech with the purpose of finding solutions for his clients.
+    <h4>Developer's socials</h4>
+    <ul class="social-ul">
+      <li><a href="https://twitter.com/geraldombuthia" target="_blank" rel="noreferrer"><i class="fab fa-twitter"
+            id="profile-link"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/gerald-mbuthia-827450177" target="_blank" rel="noreferrer"><i
+            class="fab fa-linkedin" id="profile-link"></i></a></li>
+      <li><a href="https://facebook.com/geraldo.mbuzia" target="_blank" rel="noreferrer"><i class="fab fa-facebook"
+            id="profile-link"></i></a></li>
+      <li><a href="https://instagram.com/geraldo_mbuthia" target="_blank" rel="noreferrer"><i class="fab fa-instagram"
+            id="profile-link"></i></a></li>
+      <li><a href="https://https://github.com/geraldombuthia" target="_blank" rel="noreferrer"><i class="fab fa-github"
+            id="profile-link"></i></a></li>
+    </ul>
+    <p style="text-align: center;">v1.0.3</p>
+    <div id="space"></div>
+  </div>
+  <div class="bottom"></div>
+  <p class="center">
+  <div id="bottom">
+    <ul>
+      <li id="homebtn">
+        <i class="fas fa-home"></i>
+        <p>Home</p>
+      </li>
+      <li id="feedbackbtn">
+        <i class="fas fa-comments"></i>
+        <p>Feedback</p>
+      </li>
+      <li id="aboutbtn">
+        <i class="fas fa-users"></i>
+        <p>About Us</p>
+      </li>
+    </ul>
+  </div>
+  </p>
+  <script src="app.js"></script>
+</body>
+
+</html>
