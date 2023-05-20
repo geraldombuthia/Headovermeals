@@ -22,4 +22,10 @@ The application made use of a web manifest to realize this and also to allow add
 Forms data is collected using Netlify's own inbuilt form system and can be viewed on the Netlify's account dashboard.
 
 ## Hosting
-The application is hosted on **Netlify** and you can view it here [HeadOverMeals](https://headovermeals.netlify.app/). 
+The application is hosted on **Netlify** and you can view it here [HeadOverMeals](https://headovermeals.netlify.app/).
+
+## User response
+The feedback form collected some responses from my test users and the following is an image capture of the responses.
+![Responses](./images/responses.png).
+
+The responses were majorly positive and appreciative of the design and usability.
