@@ -18,6 +18,10 @@ Another problem was the load times experienced when displaying the images from t
 The application was built as a **Progressive Web Application**. This was to allow the various resources to be stored in cache fails in the hopes of speeding up future load times. 
 The application made use of a web manifest to realize this and also to allow adding the application to the users home screen and accessing it from there.
 
+Below is an image capture of the successful download of the application on to the phone home screen.
+
+![Phone Capture](./images/Phone%20capture.jpg).
+
 ## Data collection
 Forms data is collected using Netlify's own inbuilt form system and can be viewed on the Netlify's account dashboard.
 
@@ -26,6 +30,8 @@ The application is hosted on **Netlify** and you can view it here [HeadOverMeals
 
 ## User response
 The feedback form collected some responses from my test users and the following is an image capture of the responses.
+
+
 ![Responses](./images/responses.png).
 
 The responses were majorly positive and appreciative of the design and usability.
