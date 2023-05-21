@@ -34,7 +34,6 @@ self.addEventListener("install", function (e) {
                 "/images/vegetarian.png",
                 "/images/breakfast.png",
                 "/images/Goat.png",
-                "/https://www.themealdb.com/images/media/meals/",
                 "https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap",
                 "https://fonts.googleapis.com/css2?family=Lobster&display=swap"
             ])

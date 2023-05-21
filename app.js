@@ -388,7 +388,7 @@ function renderPopular() {
     },
     {
       ingredient: "Cabbage",
-      source: "./images/tomato.png",
+      source: "./images/cabbage.png",
     },
     {
       ingredient: "Tomato",
@@ -425,6 +425,7 @@ function renderPopular() {
   ];
   let text = "";
   for (var i = 0; i < ingredients.length; i++) {
+        console.log(ingredients[i].source);
     text += `
     <div class="tab" onclick = "popularRender(this.innerText)">
         <img src="${ingredients[i].source}" alt="image of ${ingredients[i].ingredient}" >
