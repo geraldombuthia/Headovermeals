@@ -20,24 +20,22 @@ self.addEventListener("install", function (e) {
                 "/images/carrot.png",
                 "/images/buns.png",
                 "/images/eggs.png",
-                "https://www.themealdb.com/api/json/v1/1/search.php?s=beef",
-                "https://www.themealdb.com/api/json/v1/1/search.php?s=chicken",
-                "https://www.themealdb.com/api/json/v1/1/search.php?s=dessert",
-                "https://www.themealdb.com/api/json/v1/1/search.php?s=lamb",
-                "https://www.themealdb.com/api/json/v1/1/search.php?s=miscellaneous",
-                "https://www.themealdb.com/api/json/v1/1/search.php?s=pasta",
-                "https://www.themealdb.com/api/json/v1/1/search.php?s=pork",
-                "https://www.themealdb.com/api/json/v1/1/search.php?s=seafood",
-                "https://www.themealdb.com/api/json/v1/1/search.php?s=side",
-                "https://www.themealdb.com/api/json/v1/1/search.php?s=starter",
-                "https://www.themealdb.com/api/json/v1/1/search.php?s=vegan",
-                "https://www.themealdb.com/api/json/v1/1/search.php?s=vegetarian",
-                "https://www.themealdb.com/api/json/v1/1/search.php?s=breakfast",
-                "https://www.themealdb.com/api/json/v1/1/search.php?s=goat",
+                "/images/beef.png",
+                "/images/chicken.png",
+                "/images/dessert.png",
+                "/images/lamb.png",
+                "/images/miscellaneous.png",
+                "/images/pasta.png",
+                "/images/pork.png",
+                "/images/seafood.png",
+                "/images/side.png",
+                "/images/starter.png",
+                "/images/vegan.png",
+                "/images/vegetarian.png",
+                "/images/breakfast.png",
+                "/images/Goat.png",
                 "https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap",
                 "https://fonts.googleapis.com/css2?family=Lobster&display=swap"
-                
-
             ])
         })
     )

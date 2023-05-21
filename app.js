@@ -258,9 +258,11 @@ function categoriesRender(cat) {
   let i;
   let len = catArr.length;
   for (i = 0; i < len; i++) {
+    // Change the source to be able to have the thumbnails cached
+    // <img src="${catArr[i].strCategoryThumb}" alt="${catArr[i].strCategory}">
     text += `
     <div class="tab"  onclick ="catSearch(this.innerText)">
-      <img src="${catArr[i].strCategoryThumb}" alt="${catArr[i].strCategory}">
+      <img src="./images/${catArr[i].strCategory}.png" alt="${catArr[i].strCategory}">
       <div class="info" >${catArr[i].strCategory}</div>
     </div>`;
   }
@@ -297,6 +299,64 @@ function categorySelectedRender(meals, category) {
   }
 }
 function categoryRecipe(meal) {
+  let category = [
+    {
+      ingredient: "beef",
+      source: "./images/beef.png",
+    },
+    {
+      ingredient: "Chicken",
+      source: "./images/chicken.png",
+    },
+    {
+      ingredient: "dessert",
+      source: "./images/dessert.png",
+    },
+    {
+      ingredient: "lamb",
+      source: "./images/lamb.png",
+    },
+    {
+      ingredient: "miscellaneous",
+      source: "./images/miscellaneous.png",
+    },
+    {
+      ingredient: "pasta",
+      source: "./images/pasta.png",
+    },
+    {
+      ingredient: "pork",
+      source: "./images/pork.png",
+    },
+    {
+      ingredient: "seafood",
+      source: "./images/seafood.png",
+    },
+    {
+      ingredient: "side",
+      source: "./images/side.png",
+    },
+    {
+      ingredient: "starter",
+      source: "./images/starter.png",
+    },
+    {
+      ingredient: "vegan",
+      source: "./images/vegan.png",
+    },
+    {
+      ingredient: "vegetarian",
+      source: "./images/vegetarian.png",
+    },
+    {
+      ingredient: "breakfast",
+      source: "./images/breakfast.png",
+    },
+    {
+      ingredient: "goat",
+      source: "./images/goat.png",
+    },
+  ];
   backChecker();
   let id = 0;
   let url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${meal}`;
